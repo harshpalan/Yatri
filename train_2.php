@@ -295,10 +295,7 @@ else if((!isset($_POST['byname'])) && (!isset($_POST['bynum'])))
 		<footer >
 		<div style="width:100%;">
 			<div style="float:left;">
-			<p class="text-right text-info">  &copy; 2017 Copyright PVT Ltd.</p>	
-			</div>
-			<div style="float:right;">
-			<p class="text-right text-info">	Desinged By : Team Indigo</p>
+			<p class="text-right text-info">  &copy; 2018 Copyright PVT Ltd.</p>	
 			</div>
 		</div>
 		</footer>	

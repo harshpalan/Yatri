@@ -73,8 +73,6 @@ if(isset($_SESSION['name'])){}
 				<a class="brand" href="train.php" >FIND TRAIN</a>
 				<a class="brand" href="reservation.php">RESERVATION</a>
 				<a class="brand" href="profile.php">PROFILE</a>
-				<a class="brand" href="contact.php">CONTACT</a>
-				<a class="brand" href="about.php">ABOUT US</a>
 				</div>
 			</div>
 		</div>
