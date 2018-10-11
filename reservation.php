@@ -48,8 +48,9 @@ else if((!isset($_POST['from'])) && (!isset($_POST['to'])))
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link href="css/bootstrap.min.css" rel="stylesheet"></link>
-	<link href="css/Default.css" rel="stylesheet"></link>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/Default.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/logo2.jpg">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()
@@ -89,7 +90,7 @@ else if((!isset($_POST['from'])) && (!isset($_POST['to'])))
 			
 			</div>
 			<div id="heading">
-				<a href="index.php" >Indian Railways</a>
+				<a href="index.php" >Yatri</a>
 			</div>
 			</div>
 		</div>
@@ -101,7 +102,12 @@ else if((!isset($_POST['from'])) && (!isset($_POST['to'])))
 				<a class="brand" href="index.php" >HOME</a>
 				<a class="brand" href="train.php" >FIND TRAIN</a>
 				<a class="brand " href="reservation.php">RESERVATION</a>
-				<a class="brand" href="profile.php">PROFILE</a>
+				<?php 
+				if(isset($_SESSION['name']))
+				{
+				 echo "<a class=\"brand\" href=\"profile.php\">PROFILE</a>";
+				}
+				 ?>
 				</div>
 			</div>
 		</div>

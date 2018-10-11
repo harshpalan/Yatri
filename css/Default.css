@@ -21,27 +21,14 @@
 
 }
 
-.flashit{
- 	 color:##f21f1f;
-	-webkit-animation: flash linear 1s infinite;
-	animation: flash linear 1s infinite;
-}
-@-webkit-keyframes flash {
-	0% { opacity: 1; } 
-	50% { opacity: .1; } 
-	100% { opacity: 1; }
-}
-@keyframes flash {
-	0% { opacity: 1; } 
-	50% { opacity: .1; } 
-	100% { opacity: 1; }
-}
-
-
 #heading{
 	text-align:center;
-	font-size:50pt;
-	font-family:verdana,helvetica,arial,sans-serif;
+	font-size:70pt;
+	font-family: 'Charmonman', cursive;
+/*	float: left;*/
+	padding-left: 25px;
+/*	font-family: 'Montserrat', sans-serif;
+*/	/*font-family:verdana,helvetica,arial,sans-serif;*/
 	color:#993366;
 	padding-top:35pt;
 	line-height:normal;

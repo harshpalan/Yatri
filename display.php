@@ -45,9 +45,8 @@ $result=mysqli_query($conn,$sql);
     <meta name="description" content="">
     <meta name="author" content="">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	</link>
 	<link href="css/Default.css" rel="stylesheet">
-	</link>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,500i" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()
@@ -80,7 +79,7 @@ $result=mysqli_query($conn,$sql);
 			
 			</div>
 			<div id="heading">
-				<a href="index.php">Indian Railways</a>
+				<a href="index.php">Yatri</a>
 			</div>
 			</div>
 		</div>
@@ -92,8 +91,6 @@ $result=mysqli_query($conn,$sql);
 				<a class="brand" href="train.php" >FIND TRAIN</a>
 				<a class="brand" href="reservation.php">RESERVATION</a>
 				<a class="brand" href="profile.php">PROFILE</a>
-				<a class="brand" href="contact.php">CONTACT</a>
-				<a class="brand" href="about.php">ABOUT US</a>
 				</div>
 			</div>
 		</div>
@@ -191,12 +188,8 @@ $result=mysqli_query($conn,$sql);
 		<footer >
 		<div style="width:100%;">
 			<div style="float:left;">
-			<p class="text-right text-info">  &copy; 2017 Copyright PVT Ltd.</p>	
+			<p class="text-right text-info">  &copy; 2018 Copyright PVT Ltd.</p>	
 			</div>
-			<div style="float:right;">
-			<p class="text-right text-info">	Desinged By : Team Indigo</p>
-			</div>
-		</div>
 		</footer>
 	</div>
 </body>

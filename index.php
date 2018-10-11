@@ -5,15 +5,17 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Indian Railways </title>
+	<title>Yatri</title>
 	<link rel="shortcut icon" href="images/favicon.png"></link>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link href="css/bootstrap.min.css" rel="stylesheet" ></link>
-	<link href="css/bootstrap.css" rel="stylesheet" ></link>
-	<link href="css/Default.css" rel="stylesheet" >	</link>
+    <link rel="shortcut icon" href="images/logo2.jpg">
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/bootstrap.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Charmonman|Kalam|Montserrat:300i,400,500i|Rajdhani" rel="stylesheet">
+	<link href="css/Default.css" rel="stylesheet" >
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()
@@ -54,7 +56,7 @@ session_start();
 			
 			</div>
 			<div id="heading">
-				<a href="index.php">Indian Railways</a>
+				<a href="index.php">Yatri</a>
 			</div>
 			</div>
 		</div>
@@ -113,13 +115,16 @@ session_start();
 		</div>
 		
 		<!-- Copyright -->
-<footer >
+	<footer >
 		<div style="width:100%;">
 			<div style="float:left;">
 			<p class="text-right text-info">  &copy; 2018 Copyright PVT Ltd.</p>	
 			</div>
+			<div style="float:right;">
+				<p>Made by:<a href="https://www.linkedin.com/in/harsh-palan-b58680143/" target="_blank"> Harsh Palan</a> and <a href="https://www.linkedin.com/in/rishik-kabra-5113b1160/" target="_blank">Rishik Kabra</a></p>
+			</div>
 		</div>
-		</footer>	</div>
+	</footer>	</div>
 	
 </body>
 </html>

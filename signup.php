@@ -18,9 +18,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	</link>
+	<link rel="shortcut icon" href="images/logo2.jpg">
 	<link href="css/Default.css" rel="stylesheet">
-	</link>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()

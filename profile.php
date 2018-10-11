@@ -28,9 +28,9 @@ $row=mysqli_fetch_array($result);
     <meta name="description" content="">
     <meta name="author" content="">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	</link>
+	<link rel="shortcut icon" href="images/logo2.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman|Kalam|Montserrat:300i,400,500i|Rajdhani" rel="stylesheet">
 	<link href="css/Default.css" rel="stylesheet">
-	</link>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()
@@ -80,7 +80,7 @@ $row=mysqli_fetch_array($result);
 			 ?>
 			</div>
 			<div id="heading">
-				<a href="index.php">Indian Railways</a>
+				<a href="index.php">Yatri</a>
 			</div>
 			</div>
 		</div>

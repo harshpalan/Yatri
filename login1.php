@@ -10,9 +10,11 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link href="css/bootstrap.min.css" rel="stylesheet" ></link>
-	<link href="css/bootstrap.css" rel="stylesheet" ></link>
-	<link href="css/Default.css" rel="stylesheet" >	</link>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/bootstrap.css" rel="stylesheet" >
+	<link href="css/Default.css" rel="stylesheet" >
+	<link rel="shortcut icon" href="images/logo2.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman|Kalam|Montserrat:300i,400,500i|Rajdhani" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()
@@ -42,7 +44,7 @@ session_start();
 			</div>		
 			<div>
 			<div id="heading">
-				<a href="index.html">Indian Railways</a>
+				<a href="index.html">Yatri</a>
 			</div>
 			</div>
 		</div>
@@ -54,8 +56,12 @@ session_start();
 				<a class="brand" href="index.php" >HOME</a>
 				<a class="brand" href="train.php" >FIND TRAIN</a>
 				<a class="brand" href="reservation.php">RESERVATION</a>
-				<a class="brand" href="profile.php">PROFILE</a>
-				
+				<?php 
+				if(isset($_SESSION['name']))
+				{
+				 echo "<a class=\"brand\" href=\"profile.php\">PROFILE</a>";
+				}
+				 ?>				
 				</div>
 			</div>
 		</div>
