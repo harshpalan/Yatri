@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2018 at 08:05 AM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Generation Time: Oct 13, 2018 at 07:40 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -61,10 +61,7 @@ INSERT INTO `booking` (`uname`, `Tnumber`, `class`, `doj`, `DOB`, `fromstn`, `to
 ('Ankit', 12009, 'SL', '2017-04-27', '2017-04-27', 'SURAT', 'BARODA', 'ayush', 15, 'male', 'Confirmed'),
 ('ayush', 12931, '3A', '2017-04-28', '2017-04-28', 'SURAT', 'ANAND', 'akhil', 15, 'male', 'Confirmed'),
 ('ayush', 12932, '2A', '2017-05-31', '2017-04-28', 'SURAT', 'ANAND', 'smatrt', 56, 'male', 'Confirmed'),
-('ayush', 12932, '2A', '2017-05-31', '2017-04-28', 'SURAT', 'ANAND', 'ahjs', 56, 'male', 'Confirmed'),
-('Parthvi', 12932, '1A', '2018-10-12', '2018-10-11', 'ADI', 'BCT', 'Parthvi', 20, 'female', 'Waiting'),
-('Parthvi', 12932, '1A', '2018-10-12', '2018-10-11', 'ADI', 'BCT', 'Neha', 19, 'female', 'Waiting'),
-('Parthvi', 12932, '1A', '2018-10-12', '2018-10-11', 'ADI', 'BCT', 'Chaitravi', 20, 'female', 'Waiting');
+('ayush', 12932, '2A', '2017-05-31', '2017-04-28', 'SURAT', 'ANAND', 'ahjs', 56, 'male', 'Confirmed');
 
 -- --------------------------------------------------------
 
@@ -1195,9 +1192,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`f_name`, `l_name`, `email`, `password`, `gender`, `marital`, `dob`, `mobile`, `ques`, `ans`, `usertype`) VALUES
-('Harsh', 'Palan', 'harsh@gmail.com', '123456789', 'male', 'married', '1998-06-26', 9867145554, 'What was the name of your first school?', 'smpr', ''),
-('Rishik', 'Kabra', 'kabrarishik0@gmail.com', 'rishik12', 'male', 'unmarried', '1997-12-26', 8888871113, 'What is your favorite movie?', 'ZNMD', ''),
-('Parthvi', 'Mehta', 'parthvinm@gmail.com', 'parthviM', 'female', 'unmarried', '1998-08-25', 9321880030, 'What is your favorite movie?', 'yjhd', '');
+('Harsh', 'Palan', 'harsh@gmail.com', '12345678', 'male', 'married', '1998-06-26', 9867145554, 'What was the name of your first school?', 'smpr', 'admin'),
+('Neelay', 'Gosar', 'neelay.gosar@somaiya.edu', 'neelaygosar', 'male', 'unmarried', '2000-10-15', 9234567890, 'What is your pets name ?', 'harsh', 'user'),
+('Shivanee', 'Jaiswal', 'shivanee.j@somaiya.edu', 'shivanee', 'female', 'unmarried', '2000-10-15', 9167857252, 'What is your pets name ?', 'pikachu', 'user'),
+('Vicky', 'Daiya', 'vicky.daiya@somaiya.edu', '123456789', 'male', 'married', '2000-10-11', 9167684879, 'What is your favorite hero?', 'Vicky', 'user');
 
 --
 -- Indexes for dumped tables
