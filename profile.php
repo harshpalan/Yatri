@@ -125,7 +125,7 @@ $row=mysqli_fetch_array($result);
 			<tr>
 				<td>
 				<span style="width:35%;"><a id="cpass">Change Password</a></span>
-				<span class="label label-success" id="chang" style="float:right;display:none;">Password Successfully Changed &nbsp;&nbsp;&nbsp;<span>  <!-- display:none; color:#0000ff;-->
+				<span class="label label-success" id="chang" style="float:right;display:none;">Password Successfully Changed &nbsp;&nbsp;&nbsp;</span>  <!-- display:none; color:#0000ff;-->
 				</td>
 			</tr>
 		</table>
@@ -143,16 +143,15 @@ $row=mysqli_fetch_array($result);
 				<input id="sub" type="submit" disabled="disabled" class="btn btn-info" value="Change Password">
 				</form>
 		</div>
-		</div>
+	</div>
 		
 		
 		
-		<div class="span12 pass3 " style="display:none;">
+	<div class="span12 pass3 " style="display:none;">
 		<div class="span8 well">
 			<table style="width:100%;">
 			<tr>
 				<td><span style="font-weight:bold;font-size:25px;">Profile</span>
-
 			<tr/>
 			
 			<tr>
@@ -179,14 +178,14 @@ $row=mysqli_fetch_array($result);
 			</tr>
 			</table>
 		</div>
-		</div>
+	</div>
 	
-<footer >
-		<div style="width:100%;">
-			<div style="float:left;">
-			<p class="text-right text-info">  &copy; 2018 Copyright PVT Ltd.</p>	
+		<footer >
+			<div style="width:100%;">
+				<div style="float:left;">
+					<p class="text-right text-info">  &copy; 2018 Copyright PVT Ltd.</p>	
+				</div>
 			</div>
-		</div>
 		</footer>
 	
 	</div>

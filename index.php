@@ -121,7 +121,7 @@ session_start();
 			<p class="text-right text-info">  &copy; 2018 Copyright PVT Ltd.</p>	
 			</div>
 			<div style="float:right;">
-				<p>Made by:<a href="https://www.linkedin.com/in/harsh-palan-b58680143/" target="_blank"> Harsh Palan</a> and <a href="https://www.linkedin.com/in/rishik-kabra-5113b1160/" target="_blank">Rishik Kabra</a></p>
+				<p>Made by:<a href="https://www.linkedin.com/in/harshpalan/" target="_blank"> Harsh Palan</a> and <a href="https://www.linkedin.com/in/rishik-kabra-5113b1160/" target="_blank">Rishik Kabra</a></p>
 			</div>
 		</div>
 	</footer>	</div>

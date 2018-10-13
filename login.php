@@ -14,29 +14,31 @@ mysqli_select_db($conn,"$db_name")or die("cannot select DB");
 $sql="SELECT * FROM $tbl_name WHERE f_name='$uname' and password='$pass'";
 echo "$sql";
 
+
 $result=mysqli_query($conn,$sql) or trigger_error(mysql_error.$sql);
+$count = mysqli_num_rows($result);
+$row=mysqli_fetch_array($result);
 
-//$row=mysql_fetch_array($result);
-
-//echo "\n\n ..nam..".$row['f_name']."\n\n ..pass..".$row['password'];
-
-if(mysqli_num_rows($result) < 1)
+if($count < 1)
 {
 	echo " .... LOGIN TRY  ....";
 	$_SESSION['error'] = "1";
 	header("location:login1.php"); //
 }
-elseif(mysqli_num_rows($result) >= 1)
+elseif($count == 1 && $row['usertype'] == "admin")
 {
-	$_SESSION['name'] = $uname; // Make it so the username can be called by $_SESSION['name']    //
+	$_SESSION['name'] = $uname; 
 	echo " ....   LOGIN  ....";
 	echo $_SESSION['name'];
 	header("location:index.php");    //
 }
 
-else
+elseif ($count == 1 && $row['usertype'] == "user") 
 {
-	
+	$_SESSION['name'] = $uname; 
+	echo " ....   LOGIN  ....";
+	echo $_SESSION['name'];
+	header("location:reservation.php");
 }
 
 ?>

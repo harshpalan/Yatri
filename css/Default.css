@@ -1,6 +1,23 @@
-﻿body{
+﻿@font-face {
+font-family: 'Samarkan Normal';
+font-style: normal;
+font-weight: normal;
+src: local('Samarkan Normal'), url('SAMARN__.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Samarkan Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Samarkan Oblique'), url('SAMARO__.woff') format('woff');
+}
+
+body{
 	width:100%;
-	background-image:url(4.png);
+	padding-top: 25px;
+	background-color: rgb(0,0,0);
+	/*background-image:url(4.png);*/
 }
 .header{
 		height: 156px;
@@ -18,20 +35,17 @@
 	-moz-box-shadow: 10px 10px 5px #888;
 	-webkit-box-shadow: 10px 10px 5px #888;
 	box-shadow: 0px 0px 25px #666;
-
 }
+
 
 #heading{
 	text-align:center;
-	font-size:70pt;
-	font-family: 'Charmonman', cursive;
-/*	float: left;*/
-	padding-left: 25px;
-/*	font-family: 'Montserrat', sans-serif;
-*/	/*font-family:verdana,helvetica,arial,sans-serif;*/
-	color:#993366;
-	padding-top:35pt;
+	font-size:100px;
+	font-family: 'Samarkan Normal';
+	font-weight:normal;
+	/*color:#993366;*/
 	line-height:normal;
+	padding-right: 50px;
 }
 .navbar .brand {
 	padding:10px 40px 10px;

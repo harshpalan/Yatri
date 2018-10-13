@@ -44,7 +44,7 @@ session_start();
 			</div>		
 			<div>
 			<div id="heading">
-				<a href="index.html">Yatri</a>
+				<a href="index.php">Yatri</a>
 			</div>
 			</div>
 		</div>
