@@ -10,6 +10,7 @@ $tbl_name="users"; // Table name
 
 mysqli_select_db($conn,"$db_name")or die("cannot select DB");
 
+$uname=$_POST['uname'];
 $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $pass=$_POST['psd'];
@@ -25,22 +26,22 @@ $sql2="select * from $tbl_name";
 $result2=mysqli_query($conn,$sql2);
 $flag=0;
 while($row=mysqli_fetch_array($result2)){
-	if($row['email']==$mail){
+	if($row['uname']==$uname){
 		echo ""."matched";
 		$flag=1;
 		break;
 	}
 }
 if($flag==1){
-	echo ("<SCRIPT LANGUAGE='JavaScript'>
+	echo ("<script language='JavaScript'>
     window.location.href='signup.php?value=1';
-    </SCRIPT>");
+    </script>");
 	die("");
 	//echo "oh yes";
 	}
 else{
-	$sql="INSERT INTO $tbl_name(f_name,l_name,password,email,gender,marital,dob,mobile,ques,ans)
-	VALUES ('$fname','$lname','$pass','$mail','$gender','$marital','$dob','$mobile','$ques','$ans')";
+	$sql="INSERT INTO $tbl_name(u_name,f_name,l_name,password,email,gender,marital,dob,mobile,ques,ans,usertype)
+	VALUES ('$uname','$fname','$lname','$pass','$mail','$gender','$marital','$dob','$mobile','$ques','$ans','user')";
 	$result=mysqli_query($conn,$sql);
 
 	$_SESSION['name']=$fname;

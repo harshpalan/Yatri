@@ -76,9 +76,9 @@ function valid12()
 			document.getElementById("fn").innerHTML="<br/><font color=red>Name must be not start with number</font>";
 			return false;
 		 }
-		else if(c.length < 5 )
+		else if(c.length < 3)
 		{
-			document.getElementById("fn").innerHTML="<br/><font color=red>Name must be atleast 5 - 32 char long</font>";
+			document.getElementById("fn").innerHTML="<br/><font color=red>Name must be atleast greater than 2</font>";
 			return false;
 		}
 		
@@ -88,7 +88,7 @@ function valid12()
 			sub++;
 			//valid1();
 			return true;
-			//alert("ninm;l");
+			
 		}
 	}
 	function name12()
@@ -103,9 +103,9 @@ function valid12()
 			document.getElementById("ln").innerHTML="<br/><font color=red>Name must be not start with number</font>";
 			return false;
 		 }
-		else if(c.length < 5)
+		else if(c.length < 3)
 		{
-			document.getElementById("ln").innerHTML="<br/><font color=red>Name must be atleast 5 - 32 char long</font>";
+			document.getElementById("ln").innerHTML="<br/><font color=red>Name must be atleast greater than 2</font>";
 			return false;
 		}
 		else
@@ -117,7 +117,52 @@ function valid12()
 			//alert(sub);
 		}
 	}
+	function usernameIsValid() 
+	{
+	   	var c = document.forms["signup"]["uname"].value;
+	   	// alert(c);
+	   	var validcharacters = '1234567890_.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	    
+	    if (c.length < 2) {
+	    	document.getElementById("un").innerHTML="<br/><font color=red>User name must be atleast greater than 2</font>";
+			return false;
+	    }
+	    else 
+	    {
+	    for (var i = 0, l = c.length; i < l; ++i) {
+	        if (validcharacters.indexOf(c.substr(i, 1)) == -1) 
+	        {
+	        	document.getElementById("un").innerHTML="<br/><font color=red>Username can not have other special characters expect dot(.) and uunderscore(_)</font>";
+	            return false;
+	        }
+
+	        else
+	        {	
+	        	document.getElementById("un").innerHTML="";
+	        	return true;
+	        }
+	    }
+	   }
+  	}
 	
+  	function validateemail()  
+	{  
+		var x=document.forms["signup"]["eid"].value;  
+		var atposition=x.indexOf("@");  
+		var dotposition=x.lastIndexOf(".");  
+		if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+		  // alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+		  document.getElementById("em").innerHTML="<br/><font color=red>Not a valid mail id</font>"  
+		  return false;  
+		  }
+		 else
+		 {
+		 	document.getElementById("em").innerHTML="";
+	        return true;
+		 }
+	}
+
+
 // mobile number validation	
 	function mobile1()
 	{

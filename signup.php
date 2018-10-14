@@ -75,6 +75,10 @@
 		<form name="signup"  method="post" action="register.php" onsubmit="return valid12()">
 		<table>
 		<tr>
+			<td style="border-top:0px;"> User Name <font color=red>* </font></td>
+			<td style="border-top:0px;"><input type="text" name="uname" class="input-block-level" placeholder="Enter the user name" onblur="return usernameIsValid()"><span id="un"></span></td>
+		</tr>
+		<tr>
 			<td style="border-top:0px;"> First Name <font color=red>* </font></td>
 			<td style="border-top:0px;"><input type="text" name="fname" class="input-block-level" placeholder="Enter the First name" onblur="return name1()"><span id="fn"></span></td>
 		</tr>
@@ -84,7 +88,7 @@
 		</tr>
 		<tr>
 			<td style="border-top:0px;"> Email ID <font color=red>* </font> </td>
-			<td style="border-top:0px;"><input type="email" class="input-block-level" name="eid" placeholder="Enter the valid email id"></td>
+			<td style="border-top:0px;"><input type="email" class="input-block-level" name="eid" placeholder="Enter the valid email id" onblur="return validateemail()"><span id="em"></span></td>
 		</tr>
 		<tr>
 			<td style="border-top:0px;"> Password <font color=red>* </font> </td>

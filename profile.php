@@ -107,6 +107,7 @@ $row=mysqli_fetch_array($result);
 				<td>
 					<div class="span8" style="float:left;width:80%;">
 					<table class="table">
+					<tr><td >User Name : </td> <td><?php echo $row['u_name']; ?></td></tr>
 					<tr><td >First Name : </td> <td style="text-transform:capitalize;"><?php echo $row['f_name']; ?></td></tr>
 					<tr><td >Last Name : </td> <td style="text-transform:capitalize;"><?php echo $row['l_name']; ?></td></tr>
 					<tr><td>E-Mail : </td> <td><?php echo $row['email'];?></td></tr>

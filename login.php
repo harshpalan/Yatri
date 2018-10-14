@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$uname=$_POST['user'];
+$uname=$_POST['u_name'];
 $pass=$_POST['psd'];
 
 require('firstimport.php');
@@ -11,7 +11,7 @@ $tbl_name="users"; // Table name
 mysqli_select_db($conn,"$db_name")or die("cannot select DB");
 
 
-$sql="SELECT * FROM $tbl_name WHERE f_name='$uname' and password='$pass'";
+$sql="SELECT * FROM $tbl_name WHERE u_name='$uname' and password='$pass'";
 echo "$sql";
 
 
@@ -30,7 +30,7 @@ elseif($count == 1 && $row['usertype'] == "admin")
 	$_SESSION['name'] = $uname; 
 	echo " ....   LOGIN  ....";
 	echo $_SESSION['name'];
-	header("location:index.php");    //
+	header("location:adminlogin.php");    //
 }
 
 elseif ($count == 1 && $row['usertype'] == "user") 
@@ -38,7 +38,7 @@ elseif ($count == 1 && $row['usertype'] == "user")
 	$_SESSION['name'] = $uname; 
 	echo " ....   LOGIN  ....";
 	echo $_SESSION['name'];
-	header("location:reservation.php");
+	header("location:index.php");
 }
 
 ?>

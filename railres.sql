@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2018 at 07:40 PM
+-- Generation Time: Oct 14, 2018 at 07:34 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -1184,18 +1184,20 @@ CREATE TABLE `users` (
   `mobile` bigint(10) NOT NULL,
   `ques` varchar(100) NOT NULL,
   `ans` varchar(100) NOT NULL,
-  `usertype` varchar(5) NOT NULL
+  `usertype` varchar(5) NOT NULL,
+  `u_name` varchar(25) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`f_name`, `l_name`, `email`, `password`, `gender`, `marital`, `dob`, `mobile`, `ques`, `ans`, `usertype`) VALUES
-('Harsh', 'Palan', 'harsh@gmail.com', '12345678', 'male', 'married', '1998-06-26', 9867145554, 'What was the name of your first school?', 'smpr', 'admin'),
-('Neelay', 'Gosar', 'neelay.gosar@somaiya.edu', 'neelaygosar', 'male', 'unmarried', '2000-10-15', 9234567890, 'What is your pets name ?', 'harsh', 'user'),
-('Shivanee', 'Jaiswal', 'shivanee.j@somaiya.edu', 'shivanee', 'female', 'unmarried', '2000-10-15', 9167857252, 'What is your pets name ?', 'pikachu', 'user'),
-('Vicky', 'Daiya', 'vicky.daiya@somaiya.edu', '123456789', 'male', 'married', '2000-10-11', 9167684879, 'What is your favorite hero?', 'Vicky', 'user');
+INSERT INTO `users` (`f_name`, `l_name`, `email`, `password`, `gender`, `marital`, `dob`, `mobile`, `ques`, `ans`, `usertype`, `u_name`) VALUES
+('Harsh', 'Palan', 'harsh@gmail.com', '12345678', 'male', 'married', '1998-06-26', 9867145554, 'What was the name of your first school?', 'smpr', 'admin', NULL),
+('Neelay', 'Gosar', 'neelay.gosar@somaiya.edu', 'neelaygosar', 'male', 'unmarried', '2000-10-15', 9234567890, 'What is your pets name ?', 'harsh', 'user', NULL),
+('Shivanee', 'Jaiswal', 'shivanee.j@somaiya.edu', 'shivanee', 'female', 'unmarried', '2000-10-15', 9167857252, 'What is your pets name ?', 'pikachu', 'user', NULL),
+('Vicky', 'Daiya', 'vicky.daiya@somaiya.edu', '123456789', 'male', 'married', '2000-10-11', 9167684879, 'What is your favorite hero?', 'Vicky', 'user', NULL),
+('Heer', 'Palan', 'heer@gmail.com', 'heer1234', 'female', 'married', '2000-10-18', 9220564747, 'What is your favorite hero?', 'srk', 'user', 'HEER');
 
 --
 -- Indexes for dumped tables

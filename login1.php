@@ -95,7 +95,7 @@ session_start();
 			
 			<tr>
 			<td style="border-top:0px;"><label> Username</label></td>
-			<td style="border-top:0px;"> <input type="text" name="user" class="input-block-level" placeholder="Username"></td>
+			<td style="border-top:0px;"> <input type="text" name="u_name" class="input-block-level" placeholder="Username"></td>
 			</tr>
 			<tr >
 			<td style="border-top:0px;"> <label>Password</label></td>
