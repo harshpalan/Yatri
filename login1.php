@@ -74,17 +74,16 @@ session_start();
 			{
 			 if(isset($_SESSION['name']))
 			 {
-				//echo "nikul";
+				
 			 }
 			 else if($_SESSION['error']==15)
 			 {
-				//echo "hilgr";
 		?>
-				<div class="alert alert-error"><font size="5"> Please Login First..</font> 
-				</div>
-		<?php	 }
+			 <div class="alert alert-error"><font size="5"> Please Login First..</font> 
+			</div>
+		<?php 
 			}
-			//else{ echo "hi";}
+			}
 		?>
 			<br />
 			<br />

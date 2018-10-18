@@ -12,7 +12,7 @@ require('firstimport.php');
 
 mysqli_select_db($conn,"$db_name") or die("cannot select db");
 
-$result=mysqli_query($conn,"SELECT * FROM $tbl_name WHERE f_name='$name'");
+$result=mysqli_query($conn,"SELECT * FROM $tbl_name WHERE u_name='$name'");
 $row=mysqli_fetch_array($result);
 
 
@@ -62,19 +62,10 @@ $row=mysqli_fetch_array($result);
 			 if(isset($_SESSION['name']))
 			 {
 			  echo "Welcome,".$_SESSION['name']."&nbsp;&nbsp;&nbsp;<a href=\"logout.php\" class=\"btn btn-info\">Logout</a>";
-			 	// echo"<div class="dropdown">
-			 	//   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-			 	//   <span class="caret"></span></button>
-			 	//   <ul class="dropdown-menu">
-			 	//     <li><a href="#">HTML</a></li>
-			 
-			 	//   </ul>
-			 	// </div>
 			 }
 			 else
 			 {
 				$_SESSION['error']=15;
-				//echo "fgfggy".$_SESSION['error'];
 				header("location:login1.php");
 			 } 
 			 ?>
@@ -126,7 +117,17 @@ $row=mysqli_fetch_array($result);
 			<tr>
 				<td>
 				<span style="width:35%;"><a id="cpass">Change Password</a></span>
-				<span class="label label-success" id="chang" style="float:right;display:none;">Password Successfully Changed &nbsp;&nbsp;&nbsp;</span>  <!-- display:none; color:#0000ff;-->
+				<span class="label label-success" id="chang" style="float:right;display:none;">Password Successfully Changed &nbsp;&nbsp;&nbsp;</span> 
+				</td>
+				<td>
+					<?php 
+						$name1=$_SESSION['name'];
+						$tbl_name="booking";
+						$sql="SELECT DISTINCT Tnumber,class,doj,DOB,fromstn,tostn,Status FROM $tbl_name WHERE uname='$name1' ORDER BY doj ASC";
+						$result=mysqli_query($conn,$sql);
+						$row=mysqli_fetch_array($result);
+					 ?>
+					<span><a href="ViewFullStatus.php?Tnumber=<?php echo $row['Tnumber'];?>&doj=<?php echo $row['doj'];?>&fromstn=<?php echo $row['fromstn']; ?>&tostn=<?php echo $row['tostn']; ?>&DOB=<?php echo $row['DOB'];?>">View Booking Status </a></span>
 				</td>
 			</tr>
 		</table>
@@ -160,7 +161,6 @@ $row=mysqli_fetch_array($result);
 					<form action="editprofile.php" method="post" enctype="multipart/form-data">
 					<div class="span6" style="float:left;width:80%;">
 					<table class="table">
-					
 					<tr><td >First Name  </td> <td style="text-transform:capitalize; onblur="return name1()"><?php echo $name;?></td></tr>
 					<tr><td> Last name </td> <td><input name="ln" type="text" value="<?php echo $row['l_name'];?>"></td></tr>
 					<tr><td>E-Mail  </td> <td><input name="mail1" type="mail" value="<?php echo $row['email'];?>"></td></tr>
@@ -171,7 +171,6 @@ $row=mysqli_fetch_array($result);
 					<tr><td>Security Question  </td>  <td><input name="que1" type="text" value="<?php echo $row['ques'];?>"></td></tr>
 					<tr><td>Answer  </td>  <td><input name="ans1" type="text" value="<?php echo $row['ans'];?>"></td></tr>
 					<tr><td></td> <td><input type="submit" value="Save Profile" class="btn btn-info"></td></tr>
-				
 					</table>
 					</div>
 					</form>

@@ -12,7 +12,7 @@ mysqli_select_db($conn,"$db_name")or die("cannot select DB");
 
 
 $sql="SELECT * FROM $tbl_name WHERE u_name='$uname' and password='$pass'";
-echo "$sql";
+//echo "$sql";
 
 
 $result=mysqli_query($conn,$sql) or trigger_error(mysql_error.$sql);

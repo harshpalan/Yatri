@@ -27,7 +27,7 @@ $result=mysqli_query($conn,$sql);
 
 			 if(isset($_SESSION['name']))
 			 {
-			 //echo "Welcome,".$_SESSION['name']."&nbsp;&nbsp;&nbsp;<a href=\"logout.php\" class=\"btn btn-info\">Logout</a>";
+			 
 			 }
 			 else
 			 {
@@ -39,7 +39,7 @@ $result=mysqli_query($conn,$sql);
 <html>
 <head>
 	<title> Reservation </title>
-	<link rel="shortcut icon" href="images/favicon.png"></link>
+	<link rel="shortcut icon" href="images/logo2.jpg"></link>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -66,7 +66,7 @@ $result=mysqli_query($conn,$sql);
 	<div class="wrap">
 		<div class="header">
 			<div style="float:left;width:150px;">
-				<img src="images/logo.jpg"/>
+				<img src="images/logo2.jpg"/>
 			</div>		
 			<div>
 			<div style="float:right; font-size:20px;margin-top:20px;">
@@ -101,25 +101,6 @@ $result=mysqli_query($conn,$sql);
 			
 			</div>
 			<br>
-			<!--
-			<div >
-				<table class="table">
-				
-				<tr>
-					<th style="border-top:0px;" > <label>Train No.<label></th>
-					<td style="border-top:0px;"><label class="text-error"><?php echo $tnum;?></label></td>
-					<th style="border-top:0px;"><label> Train Name<label> </th>
-					<td style="border-top:0px;"><label class="text-error"><?php echo $tname;?></label></td>
-					<th style="border-top:0px;"> <label>Class <label></th>
-					<td style="border-top:0px;"><label class="text-error"><?php echo $cl;?></label></td>	
-					
-				</tr>
-				</table>
-			</div>
-			-->
-			<div>
-			
-			</div>
 			<div >
 				<table  class="table">
 				<col width="90">

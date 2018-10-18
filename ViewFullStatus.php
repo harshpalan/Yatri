@@ -23,7 +23,7 @@ mysqli_select_db($conn,"$db_name") or die("cannot select db");
 <html>
 <head>
 	<title> Reservation </title>
-	<link rel="shortcut icon" href="images/favicon.png"></link>
+	<link rel="shortcut icon" href="images/logo2.jpg"></link>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -45,13 +45,23 @@ mysqli_select_db($conn,"$db_name") or die("cannot select db");
 	
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/man.js"></script>
+	<script type="text/javascript">
+		
+	function printDiv(divName) {
+		var printContents = document.getElementById(divName).innerHTML;
+	 	var originalContents = document.body.innerHTML;
+	 	document.body.innerHTML = printContents;
+		window.print();
+		document.body.innerHTML = originalContents;
+	}
+	</script>
 	
 </head>
 <body>
 	<div class="wrap">
 		<div class="header">
 			<div style="float:left;width:150px;">
-				<img src="images/logo.jpg"/>
+				<img src="images/logo2.jpg"/>
 			</div>		
 			<div>
 			<div style="float:right; font-size:20px;margin-top:20px;">
@@ -80,15 +90,15 @@ mysqli_select_db($conn,"$db_name") or die("cannot select db");
 				</div>
 			</div>
 		</div>
-		
+		<div  id="printableArea">
 		<div class="span12 well">
 			<div align="center" style="border-bottom: 3px solid #ddd;">
 				<h2>Booked Ticket History </h2>
 			
 			</div>
 			<br>
+		</div>
 		
-	<div >
 				<table  class="table">
 				<col width="90">
 					<col width="90">
@@ -164,8 +174,9 @@ mysqli_select_db($conn,"$db_name") or die("cannot select db");
 					<td>Amount Paid :<?php $tot=($n-1)*$amt;echo $tot;?></td>
 				</tr>
 				</table>
+		</div>
 				
-								<button onClick="window.print()">Print </button>
+		<button onClick="printDiv('printableArea')">Print </button>
 		<!-- Copyright -->
 		<footer >
 		<div style="width:100%;">

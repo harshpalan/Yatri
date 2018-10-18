@@ -111,10 +111,7 @@ function valid12()
 		else
 		{
 			document.getElementById("ln").innerHTML="";
-			//sub++;
-			//valid1();
 			return true;
-			//alert(sub);
 		}
 	}
 	function usernameIsValid() 
@@ -122,8 +119,7 @@ function valid12()
 	   	var c = document.forms["signup"]["uname"].value;
 	   	// alert(c);
 	   	var validcharacters = '1234567890_.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	    
-	    if (c.length < 2) {
+		if (c.length < 2) {
 	    	document.getElementById("un").innerHTML="<br/><font color=red>User name must be atleast greater than 2</font>";
 			return false;
 	    }
@@ -151,8 +147,7 @@ function valid12()
 		var atposition=x.indexOf("@");  
 		var dotposition=x.lastIndexOf(".");  
 		if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-		  // alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
-		  document.getElementById("em").innerHTML="<br/><font color=red>Not a valid mail id</font>"  
+		  document.getElementById("em").innerHTML="<br/><font color=red>Enter a valid email id</font>"  
 		  return false;  
 		  }
 		 else

@@ -22,29 +22,29 @@ $mobile=$_POST['mobile'];
 $ques=$_POST['ques'];
 $ans=$_POST['ans'];
 
-$sql2="select * from $tbl_name";
+$sql2="select u_name from $tbl_name";
 $result2=mysqli_query($conn,$sql2);
 $flag=0;
 while($row=mysqli_fetch_array($result2)){
-	if($row['uname']==$uname){
+	if($row['u_name']==$uname){
 		echo ""."matched";
 		$flag=1;
 		break;
 	}
 }
+
 if($flag==1){
-	echo ("<script language='JavaScript'>
+	echo ("<script language='javaScript'>
     window.location.href='signup.php?value=1';
     </script>");
 	die("");
-	//echo "oh yes";
 	}
 else{
 	$sql="INSERT INTO $tbl_name(u_name,f_name,l_name,password,email,gender,marital,dob,mobile,ques,ans,usertype)
 	VALUES ('$uname','$fname','$lname','$pass','$mail','$gender','$marital','$dob','$mobile','$ques','$ans','user')";
 	$result=mysqli_query($conn,$sql);
 
-	$_SESSION['name']=$fname;
+	$_SESSION['name']=$uname;
 	header("location:index.php");
 	
 }

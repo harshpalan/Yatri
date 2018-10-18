@@ -11,7 +11,7 @@ $tbl_name="users"; // Table name
 
 mysqli_select_db($conn,	"$db_name")or die("cannot select DB");
 
-$sql="UPDATE users SET password='$pass' WHERE f_name='$name'"; 
+$sql="UPDATE users SET password='$pass' WHERE u_name='$name'"; 
 
 
 

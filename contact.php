@@ -12,15 +12,12 @@
 <html>
 <head>
 	<title> Contact </title>
-	<link rel="shortcut icon" href="images/favicon.png"></link>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	</link>
 	<link href="css/Default.css" rel="stylesheet">
-	</link>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function()

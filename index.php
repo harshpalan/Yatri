@@ -6,8 +6,6 @@ session_start();
   <head>
     <title>Yatri
     </title>
-    <link rel="shortcut icon" href="images/favicon.png">
-    </link>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
@@ -17,8 +15,7 @@ session_start();
   <link href="css/bootstrap.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css?family=Charmonman|Kalam|Montserrat:300i,400,500i|Rajdhani" rel="stylesheet">
   <link href="css/Default.css" rel="stylesheet" >
-  <script type="text/javascript" src="js/jquery.js">
-  </script>
+  <script type="text/javascript" src="js/jquery.js"></script>
   <script>
     $(document).ready(function()
                       {
