@@ -71,11 +71,12 @@ else
           <a class="brand" href="reservation.php">RESERVATION
           </a>
           <?php 
-if(isset($_SESSION['name']))
-{
-echo "<a class=\"brand\" href=\"profile.php\">PROFILE</a>";
-}
-?>
+            if(isset($_SESSION['name']))
+            {
+            echo "<a class=\"brand\" href=\"profile.php\">PROFILE</a>";
+            echo "<a class=\"brand\" href=\"display.php\">BOOKING</a>";
+            }
+          ?>
         </div>
       </div>
     </div>
@@ -148,7 +149,7 @@ echo "<a class=\"brand\" href=\"profile.php\">PROFILE</a>";
     </div>
     <div style="float:right;">
       <p>Made by:
-        <a href="https://www.linkedin.com/in/harshpalan/" target="_blank"> Harsh Palan
+        <a href="https://www.linkedin.com/in/harsh-palan-b58680143/" target="_blank"> Harsh Palan
         </a> and 
         <a href="https://www.linkedin.com/in/rishik-kabra-5113b1160/" target="_blank">Rishik Kabra
         </a>

@@ -5,8 +5,6 @@
 	<h3>USer already exists</h3>
 	<?php
 	}
-	
-
 ?>
 <!DOCTYPE html>
 <html>

@@ -23,7 +23,7 @@ $fromstn=$_GET[	'fromstn'];
 $tostn=$_GET['tostn'];
 $doj=$_GET['doj'];
 $dob=$_GET['dob'];
-echo "..".$num."..".$name."..".$age."..".$sex."..".$seat."..";
+//echo "..".$num."..".$name."..".$age."..".$sex."..".$seat."..";
 
 $sql1="SELECT ".$seat." from seats_availability where Train_No='".$num."' and doj='".$doj."'";
 $result1=$conn->query($sql1);

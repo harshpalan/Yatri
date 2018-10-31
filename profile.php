@@ -83,6 +83,7 @@ $row=mysqli_fetch_array($result);
 				<a class="brand" href="train.php" >FIND TRAIN</a>
 				<a class="brand" href="reservation.php">RESERVATION</a>
 				<a class="brand" href="profile.php">PROFILE</a>
+				<a class="brand" href="display.php">BOOKING</a>
 				</div>
 			</div>
 		</div>
@@ -118,16 +119,6 @@ $row=mysqli_fetch_array($result);
 				<td>
 				<span style="width:35%;"><a id="cpass">Change Password</a></span>
 				<span class="label label-success" id="chang" style="float:right;display:none;">Password Successfully Changed &nbsp;&nbsp;&nbsp;</span> 
-				</td>
-				<td>
-					<?php 
-						$name1=$_SESSION['name'];
-						$tbl_name="booking";
-						$sql="SELECT DISTINCT Tnumber,class,doj,DOB,fromstn,tostn,Status FROM $tbl_name WHERE uname='$name1' ORDER BY doj ASC";
-						$result=mysqli_query($conn,$sql);
-						$row=mysqli_fetch_array($result);
-					 ?>
-					<span><a href="ViewFullStatus.php?Tnumber=<?php echo $row['Tnumber'];?>&doj=<?php echo $row['doj'];?>&fromstn=<?php echo $row['fromstn']; ?>&tostn=<?php echo $row['tostn']; ?>&DOB=<?php echo $row['DOB'];?>">View Booking Status </a></span>
 				</td>
 			</tr>
 		</table>
@@ -249,16 +240,15 @@ function check123()
 		}
 	}
 </script>
-<?php
+	<?php
 
-if(isset($_SESSION['error']))
-{
-if($_SESSION['error']==6)
-{echo "<script>document.getElementById(\"chang\").style.display=\"\";</script>";
- }
-//unset($_SESSION['error']);
-}
-?>
+	if(isset($_SESSION['error']))
+	{
+	if($_SESSION['error']==6)
+	{echo "<script>document.getElementById(\"chang\").style.display=\"\";</script>";
+	 }
+	}
+	?>
 
 </body>
   

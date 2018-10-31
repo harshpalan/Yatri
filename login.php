@@ -19,6 +19,16 @@ $result=mysqli_query($conn,$sql) or trigger_error(mysql_error.$sql);
 $count = mysqli_num_rows($result);
 $row=mysqli_fetch_array($result);
 
+
+$sql2="SELECT Tnumber,doj,Name,Age,Sex,Status,DOB,class FROM $tbl_name WHERE (uname='$uname' and Tnumber='$tno' and doj='$doj' and DOB='$DOB' and fromstn='$fromstn' and tostn='$tostn')";
+$result2=mysqli_query($conn,$sql2);
+$booking = mysqli_num_rows($result2);
+if ($booking == 1 ) {
+	$_SESSION["booking"] = "booked";
+}
+
+
+
 if($count < 1)
 {
 	echo " .... LOGIN TRY  ....";

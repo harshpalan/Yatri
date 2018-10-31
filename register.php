@@ -26,6 +26,7 @@ $sql2="select u_name from $tbl_name";
 $result2=mysqli_query($conn,$sql2);
 $flag=0;
 while($row=mysqli_fetch_array($result2)){
+	printf($row);
 	if($row['u_name']==$uname){
 		echo ""."matched";
 		$flag=1;

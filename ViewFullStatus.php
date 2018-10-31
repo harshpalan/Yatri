@@ -177,6 +177,14 @@ mysqli_select_db($conn,"$db_name") or die("cannot select db");
 		</div>
 				
 		<button onClick="printDiv('printableArea')">Print </button>
+		
+		<!-- <button type="button" onclick="loadMail()" style="float: right;">Get Mail</button> -->
+
+		<!-- <form action="" method="post" style="float: right;">
+    		<input type="submit" value="Get Mail" />
+    		<input type="hidden" name="button_pressed" value="1" />
+		</form> -->
+
 		<!-- Copyright -->
 		<footer >
 		<div style="width:100%;">

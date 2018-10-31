@@ -23,6 +23,19 @@
     <div class="navbar-header">
        <a class="navbar-brand" href="#"><img src="images/logo3.png"> Yatri - Admin Page</a>
     </div>
+    <a style="float: right; color: white">
+      <?php
+       if(isset($_SESSION['name']))
+       {
+        echo "Welcome,".$_SESSION['name']."&nbsp;&nbsp;&nbsp;<a href=\"logout.php\" class=\"btn btn-info\" style=\"float: right;\">Logout</a>";
+       }
+       else
+       {
+        $_SESSION['error']=15;
+        header("location:login1.php");
+       } 
+       ?>
+      </a>
   </div>
 </nav>
 <nav class="navbar-primary">
@@ -36,8 +49,8 @@
   </ul>
 </nav>
 <div class="main-content">
-  <h1> I am the main content </h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sint assumenda quae aliquid voluptatibus quia, ea, ad natus magni repellat earum, culpa iure tempore. Enim dolor eaque minima voluptas ducimus?</p>
+  <h1>Hello Yatri Admin</h1>
+  <p></p>
 </div>
 </nav>
 </body>

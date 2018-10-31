@@ -13,7 +13,7 @@ if(isset($_SESSION['name'])){}
 <html>
 <head>
 	<title> Reservation </title>
-	<link rel="shortcut icon" href="images/favicon.png"></link>
+	<link rel="shortcut icon" href="images/logo2.jpg"></link>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -147,7 +147,7 @@ if(isset($_SESSION['name'])){}
 			
 			<table class="table">
 				<tr>
-					<th style="width:100px;border-top:0px;">SNo.</th>
+					<th style="width:100px;border-top:0px;"> SNo.</th>
 					<th style="width:200px;border-top:0px;"> Name</th>
 					<th style="width:100px;border-top:0px;"> Age </th>
 					<th style="width:100px;border-top:0px;"> Sex </th>

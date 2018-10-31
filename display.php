@@ -91,6 +91,8 @@ $result=mysqli_query($conn,$sql);
 				<a class="brand" href="train.php" >FIND TRAIN</a>
 				<a class="brand" href="reservation.php">RESERVATION</a>
 				<a class="brand" href="profile.php">PROFILE</a>
+				<a class="brand" href="display.php">BOOKING</a>
+
 				</div>
 			</div>
 		</div>
@@ -119,9 +121,8 @@ $result=mysqli_query($conn,$sql);
 					<th style="width:100px;border-top:0px;">To</th>
 					<th style="width:100px;border-top:0px;">Date Of Booking</th>
 					<th style="width:100px;border-top:0px;">Current Status</th>
-				</tr>	
+				</tr>
 				<?php
-				
 				$n=1;
 				while($row=mysqli_fetch_array($result)){
 					if($n%2!=0)
