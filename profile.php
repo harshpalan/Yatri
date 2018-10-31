@@ -152,14 +152,15 @@ $row=mysqli_fetch_array($result);
 					<form action="editprofile.php" method="post" enctype="multipart/form-data">
 					<div class="span6" style="float:left;width:80%;">
 					<table class="table">
-					<tr><td >First Name  </td> <td style="text-transform:capitalize; onblur="return name1()"><?php echo $name;?></td></tr>
+					<tr><td >User Name  </td> <td onblur="return name1()"><?php echo $name;?></td></tr>
+					<tr><td> First name </td> <td><input name="ln" type="text" value="<?php echo $row['f_name'];?>"></td></tr>
 					<tr><td> Last name </td> <td><input name="ln" type="text" value="<?php echo $row['l_name'];?>"></td></tr>
 					<tr><td>E-Mail  </td> <td><input name="mail1" type="mail" value="<?php echo $row['email'];?>"></td></tr>
 					<tr><td>Dob  </td> <td><input name="dob1" type="text" value="<?php echo $row['dob'];?>"></td></tr>
 					<tr><td>Gender  </td>  <td><input name="gnd1" type="text" value="<?php echo $row['gender'];?>"></td></tr>
 					<tr><td>Marital Status </td>  <td><input name="mrt1" type="text" value="<?php echo $row['marital'];?>"></td></tr>
 					<tr><td>Mobile No.  </td>  <td><input name="mon1" type="text" value="<?php echo $row['mobile'];?>"></td></tr>
-					<tr><td>Security Question  </td>  <td><input name="que1" type="text" value="<?php echo $row['ques'];?>"></td></tr>
+					<tr><td>Security Question  </td>  <td><?php echo $row['ques'];?></td></tr>
 					<tr><td>Answer  </td>  <td><input name="ans1" type="text" value="<?php echo $row['ans'];?>"></td></tr>
 					<tr><td></td> <td><input type="submit" value="Save Profile" class="btn btn-info"></td></tr>
 					</table>

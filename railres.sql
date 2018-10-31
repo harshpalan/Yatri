@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2018 at 07:28 PM
+-- Generation Time: Oct 31, 2018 at 08:58 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -94,16 +94,6 @@ INSERT INTO `interlist` (`Number`, `st1`, `st1arri`, `st2`, `st2arri`, `st3`, `s
 (12932, 'VAPI', '19:15', 'VALSAD', '18:45', 'SURAT', '01:30', 'BARODA', '15:30', 'ANAND', '14:11', 'ADI', '13:00', 'BCT', '22:10', 'BCT DOUBLEDECKE', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y'),
 (19011, 'VAPI', '12:26', 'VALSAD', '01:50', 'SURAT', '23:45', 'BARODA', '20:20', 'ANAND', '18:10', 'ADI', '16:25', 'BCT', '10:25', 'GUJARAT EXPRESS', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y'),
 (22210, 'VAPI', '00:10', 'VALSAD', '23:50', 'SURAT', '22:25', 'BARODA', '20:11', 'ANAND', '18:20', 'NDLS', '16:15', 'BCT', '01:35', 'BCT DURONTO', 'N', 'N', 'Y', 'N', 'N', 'N', 'Y');
-(12301, 'HOW', '10:00', 'VALSAD', '23:50', 'SURAT', '22:25', 'BARODA', '20:11', 'ANAND', '18:20', 'DEL', '16:15', 'DEL', '16:55', 'HOWRAH-DELHI RAJDHANI', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y');
-(12302, 'DEL', '16:55', 'VALSAD', '23:50', 'SURAT', '22:25', 'BARODA', '20:11', 'ANAND', '18:20', 'HOW', '16:15', 'HOW', '09:50', 'DELHI-HOWRAH RAJDHANI', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y');
-(12305, 'HOW', '14:05', 'VALSAD', '23:50', 'SURAT', '22:25', 'BARODA', '20:11', 'ANAND', '18:20', 'DEL', '16:15', 'BCT', '10:00', 'HOWRAH-DELHI RAJDHANI', 'N', 'N', 'N', 'N', 'N', 'N', 'Y');
-(12306, 'DEL', '16:55', 'VALSAD', '23:50', 'SURAT', '22:25', 'BARODA', '20:11', 'ANAND', '18:20', 'HOW', '16:15', 'BCT', '12:15', 'DELHI-HOWRAH RAJDHANI', 'N', 'N', 'N', 'N', 'Y', 'N', 'N');
-(12953, 'BCT', '18:55', 'VALSAD', '23:50', 'SURAT', '22:25', 'BARODA', '20:11', 'ANAND', '18:20', 'HNZ', '16:15', 'DEL', '17:15', 'MUMBAI-DELHI RAJDHANI', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y');
-
-
-
-
-
 
 -- --------------------------------------------------------
 
@@ -1155,6 +1145,8 @@ CREATE TABLE `train_list` (
 
 INSERT INTO `train_list` (`Number`, `Name`, `Origin`, `Destination`, `Arrival`, `Departure`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, `Sun`, `1A`, `2A`, `3A`, `SL`, `General`, `Ladies`, `Tatkal`) VALUES
 (12009, 'SHATABDI EXP', 'BCT', 'ADI', '22:15', '12:25', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 2500, 1000, 500, 250, 2, 1, 3),
+(12163, 'CHENNAI EXPRESS', 'DR', 'MS', 'First st', '20:30', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', 2500, 1000, 500, 350, 2, 1, 3),
+(12345, 'BCT EXPRESS', 'BCT', 'BHUJ', '15:00', '8:00', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 2500, 1000, 500, 250, 2, 1, 3),
 (12931, 'ADI DOUBLE DECK', 'BCT', 'ADI', 'First st', '14:20', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 2500, 1000, 500, 250, 2, 1, 3),
 (12932, 'BCT DOUBLEDECKE', 'ADI', 'BCT', '13:00', 'Last st', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 2500, 1000, 500, 250, 2, 1, 3),
 (12952, 'MUMBAI RAJDHANI', 'NDLS', 'BCT', '08:25', 'last st', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 2500, 1000, 500, 250, 2, 1, 3),
@@ -1165,13 +1157,6 @@ INSERT INTO `train_list` (`Number`, `Name`, `Origin`, `Destination`, `Arrival`, 
 (25222, 'BCT DURONTO', 'NDLS', 'BCT', '16:15', 'Last st', 'N', 'N', 'Y', 'N', 'N', 'N', 'Y', 2500, 1000, 500, 250, 2, 1, 3),
 (29333, 'KARNAVATI EXP', 'AHMD', 'BCT', '08:11', '21:10', 'Y', 'Y', 'Y', 'N', 'Y', 'N', 'Y', 2500, 1000, 500, 250, 2, 1, 3),
 (59442, 'AHMEDABAD PASS', 'ADI', 'BCT', '10:35', '1:35', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 2500, 1000, 500, 250, 2, 1, 3);
-
-(12301, 'HOWRAH-DELHI RAJDHANI', 'HOW', 'DEL', '10:00', '16:55', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 2500, 1000, 500, 250, 2, 1, 3);
-(12302, 'DELHI-HOWRAH RAJDHANI', 'DEL', 'HOW', '16:55', '09:50', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 2500, 1000, 500, 250, 2, 1, 3);
-(12305, 'HOWRAH-DELHI RAJDHANI', 'HOW', 'DEL', '14:05', '10:00', 'N', 'N', 'N', 'N', 'N', 'N', 'Y', 2500, 1000, 500, 250, 2, 1, 3);
-(12306, 'DELHI-HOWRAH RAJDHANI', 'DEL', 'HOW', '16:55', '12:15', 'N', 'N', 'N', 'N', 'Y', 'N', 'N', 2500, 1000, 500, 250, 2, 1, 3);
-(12953, 'MUMBAI-DELHI RAJDHANI', 'BCT', 'HNZ', '18:55', '17:15','Y', 'Y', 'Y', 'N', 'Y', 'N', 'Y', 2500, 1000, 500, 250, 2, 1, 3);
-
 
 -- --------------------------------------------------------
 
